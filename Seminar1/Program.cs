@@ -19,14 +19,14 @@ a = -9 b = -3 -> max = -3
 Console.WriteLine("Вычисление максимального и минимального из двух чисел");
 
 Console.WriteLine("Введите число a");
-double a = Convert.ToDouble(Console.ReadLine());
+double num1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите число b");
-double b = Convert.ToDouble(Console.ReadLine());
+double num2 = Convert.ToDouble(Console.ReadLine());
 
-if(a>b)
-    Console.WriteLine($"Наибольшее: {a}, наименьшее: {b}");
-else if(b>a)
-    Console.WriteLine($"Наибольшее: {b}, наименьшее: {a}");
+if(num1>num2)
+    Console.WriteLine($"Наибольшее: {num1}, наименьшее: {num2}");
+else if(num2>num1)
+    Console.WriteLine($"Наибольшее: {num2}, наименьшее: {num1}");
 else
     Console.WriteLine("Числа равны");
 **/
@@ -92,12 +92,14 @@ else
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 **/
-Console.WriteLine("Отображение четных чисел от 1 до N");
+/*
+Console.WriteLine("Отображение четных чисел от 2 до N");
 
 int startPoint = 2;
 int delta = 2;
 int count = 1;
 int interSum = startPoint;
+string strResult = "";
 
 Console.WriteLine("Введите число");
 int N = Convert.ToInt32(Console.ReadLine());
@@ -107,12 +109,13 @@ if(N < startPoint){
     return;
 }
 
-string strResult = $"{startPoint}";
-
 while (interSum <= N){
-    strResult += ", " + interSum;
+    strResult += interSum + ", ";
     interSum = startPoint + delta * count;
     count++;
 }
 
+strResult = strResult.Substring(0,strResult.Length-2);
+
 Console.WriteLine(strResult);
+**/
