@@ -1,2 +1,4 @@
+.vscode/**
+Seminar[0-9]*/bin/**
+Seminar[0-9]*/obj/**
 *.csproj
-obj/
